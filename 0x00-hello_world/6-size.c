@@ -1,22 +1,22 @@
-# inclure  < stdio.h >
+#include <stdio.h>
 
-/* *
-* principal - Point d'entrée
-*
-* Retour : Toujours 0 (Succès)
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
-int  principal ( vide )
+int main(void)
 {
-	int un ;
-	 entier long b ;
-	 entier long long  c ;
-	caractère d ;
-	flottant f ;
+	int a;
+	long int b;
+	long long int c;
+	char d;
+	float f;
 
-	printf ( " Taille d'un caractère : %lu octet(s) \n " , ( unsigned  long ) sizeof (d));
-	printf ( " Taille d'un int : %lu octet(s) \n " , ( unsigned  long ) sizeof (a));
-	printf ( " Taille d'un entier long : %lu octet(s) \n " , ( unsigned  long ) sizeof (b));
-	printf ( " Taille d'un entier long long : %lu octet(s) \n " , ( long non signé  ) sizeof (c));
-	printf ( " Taille d'un flottant : %lu octet(s) \n " , ( unsigned  long ) sizeof (f));
-	retour ( 0 );
+	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(d));
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(a));
+	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(b));
+	printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(c));
+	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+	return (0);
 }
