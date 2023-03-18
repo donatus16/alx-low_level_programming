@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints numbers 0-9 without using char or printf/puts,
- * and putchar 2x max
+ * main - prints all possible combinations of single digit numbers.
 (*
  * Return: 0 on success
  */
@@ -12,8 +11,14 @@ int main(void)
 	while (i <= '9')
 	{
 		putchar(i);
-		i++;
+		if (i != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		++i;
 	}
 	putchar('\n');
 	return (0);
+
 }
