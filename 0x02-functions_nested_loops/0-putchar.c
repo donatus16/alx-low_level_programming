@@ -1,19 +1,17 @@
+#include <unistd.h>
 #include "main.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+* main - prints the string "_putchar" from a character array.
+* Return: 0 on success.
+*/
 int main(void)
 {
-	char *sh = "school";
-
-	while (*sh)
-	{
-		_putchar(*sh);
-		sh++;
-	}
-	_putchar('\n');
-
-	return (0);
+char c[] = "_putchar";
+int i;
+for (i = 0; i < 9; i++)
+{
+_putchar(c[i]);
+}
+_putchar('\n');
+return (0);
 }
