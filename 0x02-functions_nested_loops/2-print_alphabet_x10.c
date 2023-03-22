@@ -4,17 +4,17 @@
 *
 * Return: x10 a-z
 */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
-int i = 0;
-while (i < 10)
+int n, co;
+co = 0;
+while (co < 10)
 {
-int n;
 for (n = 'a'; n <= 'z'; n++)
 {
 _putchar(n);
 }
-i++;
+co++;
 }
 _putchar('\n');
 }
