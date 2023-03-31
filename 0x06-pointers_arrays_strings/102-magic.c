@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
 	int n;
@@ -16,8 +21,14 @@ int main(void)
    * - only one statement
    * - you are not allowed to code anything else than this line of code
    */
-  ;
-  /* ...so that this prints 98\n */
-  printf("a[2] = %d\n", a[2]);
-  return (0);
+	printf("n = %p\n", n);
+	printf("a[0] = %p\n", &a[0]);
+	printf("a[1] = %p\n", &a[1]);
+	printf("a[2] = %p\n", &a[2]);
+	printf("p = %p\n", p);
+	printf("a[3] = %p\n", &a[3]);
+	*(p + 5) = 98;
+	/* ...so that this prints 98\n */
+	printf("a[2] = %d\n", a[2]);
+	return (0);
 }
