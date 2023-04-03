@@ -19,4 +19,5 @@ void printHexes(char *b, int start, int end);
 void printASCII(char *b, int start, int end);
 void simple_print_buffer(char *buffer, unsigned int size);
 char *_memset(char *s, char b, unsigned int n);
+char *_memcpy(char *dest, char *src, unsigned int n);
 #endif
