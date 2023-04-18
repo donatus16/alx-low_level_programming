@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-/* *
-  * main - Affiche le nom du fichier du programme
+/**
+  * main - Prints the file name of the program
   *
-  * Retour : Toujours zéro
+  * Return: Always zero
   */
-int  main ( void )
+int main(void)
 {
-	printf ( " %s \n " , __FILE__);
-	return ( 0 );
+	printf("%s\n", __FILE__);
+	return (0);
 }
