@@ -1,21 +1,27 @@
 #include "main.h"
 /**
-* *_strncat - concatenates 2 strings
-* @dest: the target string
-* @src: what is being added
-* @n: how much of src is being added to dest
-* Return: returns the dest
-*/
+ * _strncat - concatenate strings, defining the size of second string.
+ * @dest: string with concatenation
+ * @src: string to be concatenated
+ * @n: size of second string
+ * Return: Always 0.
+ */
 char *_strncat(char *dest, char *src, int n)
 {
-	int x, y;
+	int lengthD, lengthS;
 
-	for (x = 0; dest[x] != '\0'; x++)
-		;
-	for (y = 0; src[y] != '\0' && y < n; y++)
+	lengthD = 0;
+	lengthS = 0;
+
+	while (*(dest + lengthD) != '\0')
+		lengthD++;
+
+	while (*(src + lengthS) != '\0' && lengthD < 97 && lengthS < n)
 	{
-		dest[x + y] = src[y];
+		*(dest + lengthD) = *(src + lengthS);
+		lengthD++;
+		lengthS++;
 	}
-	dest[x + y] = '\0';
+	*(dest + lengthD) = '\0';
 	return (dest);
 }
